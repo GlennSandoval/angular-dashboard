@@ -1,0 +1,18 @@
+<div class="sn-dashitem" >
+    <div ng-repeat="statitem in item.items" class="sn-statsummary">
+        <div class="sn-statsummary-item">
+            <div class="col-sm-4" >
+                <div class="sn-statsummary-stat text-center">
+                    {{statitem.stat}}
+                </div>
+                <div class="sn-statsummary-description text-center">
+                    {{statitem.description}}
+                </div>
+            </div>
+            <div class="col-sm-8">
+            <!-- TODO replace with transclude so it doesn't request garbage  -->
+                <img class="sn-statsummary-graphic" src="resources/images/{{statitem.graphic}}.png"/>
+            </div>
+        </div>
+    </div>
+</div>

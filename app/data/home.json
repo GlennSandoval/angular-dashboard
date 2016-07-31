@@ -1,0 +1,125 @@
+[{
+    "id": 0,
+    "title": "Hello {{user.firstname}},",
+    "subtitle": "Checkout your latest projects and their progress.",
+    "items": [{
+        "type": "wavychart",
+        "options": {
+            "chart": {
+                "type": "lineChart",
+                "height": 350,
+                "width": 1000,
+                "margin": {
+                    "top": 20,
+                    "right": 20,
+                    "bottom": 40,
+                    "left": 55
+                },
+                "useInteractiveGuideline": true
+            },
+            "title": {
+                "enable": true,
+                "text": "Spiky lines",
+                "css": {
+                    "text-align": "left"
+                }
+            },
+            "subtitle": {
+                "enable": true,
+                "text": "Working hours",
+                "css": {
+                    "text-align": "left",
+                    "margin": "10px 13px 0px 7px"
+                }
+            }
+        }
+    }]
+}, {
+    "id": 1,
+    "title": "Crunch some Numbers",
+    "subtitle": "See how your projects are progressing via the new statistics engine.",
+    "items": [{
+        "type": "statsummary",
+        "items": [{
+            "stat": 96,
+            "description": "Working Hours",
+            "graphic": "chart"
+        }, {
+            "stat": 1204,
+            "description": "Conversations",
+            "graphic": "squiggle"
+        }, {
+            "stat": 7,
+            "description": "People",
+            "graphic": "people"
+        }]
+    }, {
+        "type": "dayprogress",
+        "data": [{
+            "color": "red",
+            "key": "red",
+            "values": [{ "x": 30.5, "y": 70 }, { "x": 35, "y": 40 }, { "x": 37, "y": 50 }, { "x": 40, "y": 45 }, { "x": 50, "y": 55 }]
+        }, {
+            "color": "blue",
+            "key": "blue",
+            "values": [{ "x": 30.5, "y": 50 }, { "x": 35, "y": 45 }, { "x": 37, "y": 20 }, { "x": 40, "y": 25 }, { "x": 50, "y": 35 }]
+        }],
+        "options": {
+            "chart": {
+                "type": "lineChart",
+                "height": 250
+            },
+            "title": {
+                "enable": true,
+                "text": "Daily Progress",
+                "css": {
+                    "text-align": "left"
+                }
+            },
+            "subtitle": {
+                "enable": true,
+                "text": "Working hours",
+                "css": {
+                    "text-align": "left",
+                    "margin": "10px 13px 0px 7px"
+                }
+            }
+        }
+    }]
+}, {
+    "id": 2,
+    "title": "Current Progress",
+    "subtitle": "This table will show you how your current projects are behaving.",
+    "items": [{
+        "type": "projectlist",
+        "projects": [{
+            "title": "Design & Development",
+            "image": "proj1",
+            "updated": "2016-04-23T18:25:43.511Z",
+            "time": "26:30",
+            "comments": 624,
+            "completed": 15
+        }, {
+            "title": "Design & Development",
+            "image": "proj2",
+            "updated": "2016-04-23T18:25:43.511Z",
+            "time": "26:30",
+            "comments": 132,
+            "completed": 75
+        }, {
+            "title": "Design & Development",
+            "image": "proj3",
+            "updated": "2016-04-23T18:25:43.511Z",
+            "time": "26:30",
+            "comments": 224,
+            "completed": 50
+        }, {
+            "title": "Design & Development",
+            "image": "proj4",
+            "updated": "2016-04-23T18:25:43.511Z",
+            "time": "26:30",
+            "comments": 334,
+            "completed": 35
+        }]
+    }]
+}]
