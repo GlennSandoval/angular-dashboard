@@ -1,0 +1,70 @@
+/* app css stylesheet */
+
+.menu {
+    list-style: none;
+    border-bottom: 0.1em solid black;
+    margin-bottom: 2em;
+    padding: 0 0 0.5em;
+}
+
+.menu:before {
+    content: "[";
+}
+
+.menu:after {
+    content: "]";
+}
+
+.menu > li {
+    display: inline;
+}
+
+.menu > li:before {
+    content: "|";
+    padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+    content: "";
+    padding: 0;
+}
+
+.sn-dashitem {
+    background: white;
+    padding: 15px 10px 5px 10px;
+    margin-left: 10px;
+}
+
+.sn-maintitle {
+    font-weight: bold;
+}
+
+.sn-subtitle {
+    font-size: 12px;
+}
+
+.sn-dashrow {
+    margin-top: 15px;
+}
+
+.sn-statsummary:not(:last-child) .sn-statsummary-item {
+    border-bottom: 1px solid silver;
+}
+
+.sn-statsummary-item {
+    height: 100px;
+}
+
+.sn-statsummary-stat {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.sn-statsummary-description {
+    font-size: 12px;
+    color: grey;
+}
+
+.sn-statsummary-graphic {
+    width: 100px;
+}

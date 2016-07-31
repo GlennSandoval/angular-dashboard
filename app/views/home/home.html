@@ -1,0 +1,11 @@
+<div ng-repeat="row in rows" class="row sn-dashrow">
+    <span class="sn-maintitle">{{ row.title }}</span>
+    <br/>
+    <span class="sn-subtitle">{{ row.subtitle }}</span>
+    <hr>
+    <div style="display: flex;">
+        <div ng-repeat="item in row.items" style="flex-grow:1;">
+            <dash-item item="item"></dash-item>
+        </div>
+    </div>
+</div>
